@@ -1,0 +1,13 @@
+{% for book in all_books %}
+
+<h2>Book Title: {{ book.title }}</h2>
+    <p>Author: {{ book.author }}</p><br>
+    <p>Description: {{ book.description }}</p><br>
+    <p>Price: {{ book.price }}</p><br>
+    <p>ISBN: {{ book.isbn }}</p><br>
+    <p>Release Date:{{ book.release_date }}</p><br>
+    <p>Language:{{ book.language }}</p><br>
+    <p>Pges:{{ book.pages }}</p><br>
+    <img src="{{ book.book_image }}" >
+
+{% endfor %}
